@@ -22,6 +22,28 @@ import sys
 import time
 import random
 
+def DoOpenFile():
+  print("Open File")
+  print("This function is not ready yet!!!")
+
+def DoNewFile():
+  print("New File")
+  print("This function is not ready yet!!!")
+
+def DoQuickDefault():
+  print("Quick Default")
+  print("This function is not ready yet!!!")
+
+def DoSettings():
+  print("Settings")
+  print("This function is not ready yet!!!")
+
+def DoHelp():
+  print("Help")
+  
+def DoGitHub():
+  print("GitHub")
+  webbrowser.open('https://github.com/SamuelPalubaCZ')
 
 def ShowMenu(typ = "Full"):
   if typ in ["Full", "full", "FULL", 1]:
@@ -42,50 +64,11 @@ def ShowMenu(typ = "Full"):
   print("\n")
   select = input("Give me number of your select❗\n")
   return select
+select1 = "6"
 
-def DoActions(typ = select1):
-  if typ == "1":
-    DoOpenFile()
-  elif typ == "2":
-    DoNewFile()
-  elif typ == "3":
-    DoQuickDefault()
-  elif typ == "4":
-    DoSettings()
-  elif typ == "5":
-    DoHelp()
-  elif typ == "6":
-    DoGitHub()
-  else:
-    print("Daum asi jsem udělal bug nebo jsi blbě zadal info!!! Pokus se restartovat program a pokud problém přetrvává udělej mi report na GitHub!!!")
-  op = ShowMenu()
 kex = input("LOL\n")
 select1 = ShowMenu(kex)
 DoActions(select1)
-
-def DoOpenFile():
-  print("Open File")
-  print("This function is not ready yet!!!")
-
-def DoNewFile():
-  print("New File")
-  print("This function is not ready yet!!!")
-
-def DoQuickDefault():
-  print("Quick Default")
-  print("This function is not ready yet!!!")
-
-def DoSettings():
-  print("Settings")
-  print("This function is not ready yet!!!")
-
-def DoHelp():
-  print("Help")
-  print("This function is not ready yet!!!")
-
-def DoGitHub():
-  print("GitHub")
-  webbrowser.open('https://github.com/SamuelPalubaCZ')
 
   
 def DoExit():
