@@ -16,6 +16,12 @@ print("""
 █▀▄▀█ ▄▀█ █▀▄ █▀▀   █▄▄ █▄█   █▀ ▄▀█ █▀▄▀█ █░█ █▀▀ █░░   █▀█ ▄▀█ █░░ █░█ █▄▄ ▄▀█   ▀ █▀▄   ▄▀ █▀▀ ▀▄   ▀█ █▀█ ▀█ ▀█
 █░▀░█ █▀█ █▄▀ ██▄   █▄█ ░█░   ▄█ █▀█ █░▀░█ █▄█ ██▄ █▄▄   █▀▀ █▀█ █▄▄ █▄█ █▄█ █▀█   ▄ █▄▀   ▀▄ █▄▄ ▄▀   █▄ █▄█ █▄ █▄
 """)
+import webbrowser
+import os
+import sys
+import time
+import random
+
 
 def ShowMenu(typ = "Full"):
   if typ in ["Full", "full", "FULL", 1]:
@@ -56,3 +62,35 @@ def DoActions(typ = select1):
 kex = input("LOL\n")
 select1 = ShowMenu(kex)
 DoActions(select1)
+
+def DoOpenFile():
+  print("Open File")
+  print("This function is not ready yet!!!")
+
+def DoNewFile():
+  print("New File")
+  print("This function is not ready yet!!!")
+
+def DoQuickDefault():
+  print("Quick Default")
+  print("This function is not ready yet!!!")
+
+def DoSettings():
+  print("Settings")
+  print("This function is not ready yet!!!")
+
+def DoHelp():
+  print("Help")
+  print("This function is not ready yet!!!")
+
+def DoGitHub():
+  print("GitHub")
+  webbrowser.open('https://github.com/SamuelPalubaCZ')
+
+  
+def DoExit():
+  print("Exit")
+  exit(69)
+
+  op = ShowMenu()
+  DoActions(op)
