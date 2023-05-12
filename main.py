@@ -28,7 +28,14 @@ def DoOpenFile():
 
 def DoNewFile():
   print("New File")
-  print("This function is not ready yet!!!")
+#udělá soubor s koncofkou .porn a zeptá se uživatele na jméno souboru
+#now ask user for file name
+ask66 = input("What is the name of the file?")
+#now create file with name ask66 + .porn
+ask66 += ".porn"
+print(ask66)
+with open(ask66, encoding="utf-8") as tůdů:
+pass
 
 def DoQuickDefault():
   print("Quick Default")
