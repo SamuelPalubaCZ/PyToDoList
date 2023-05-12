@@ -21,7 +21,8 @@ import os
 import sys
 import time
 import random
-
+def sleep(ii):
+    time.sleep(ii)
 def DoOpenFile():
   print("Open File")
   print("This function is not ready yet!!!")
@@ -34,8 +35,8 @@ ask66 = input("What is the name of the file?")
 #now create file with name ask66 + .porn
 ask66 += ".porn"
 print(ask66)
-with open(ask66, encoding="utf-8") as tůdů:
-pass
+with open(ask66, "w", encoding="utf-8") as tudu:
+  pass
 
 def DoQuickDefault():
   print("Quick Default")
@@ -47,7 +48,13 @@ def DoSettings():
 
 def DoHelp():
   print("Help")
-  
+  sleep(5)
+  print("...")
+  sleep(5)
+  print("on what you need help? go call me!!!")
+  sleep(5)
+  webbrowser.open('tel://728981602')
+
 def DoGitHub():
   print("GitHub")
   webbrowser.open('https://github.com/SamuelPalubaCZ')
